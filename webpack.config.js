@@ -36,6 +36,18 @@ module.exports = {
         exclude: /..\/node_modules/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'file-loader',
+        type: 'asset/resource',
+        options: {
+          publicPath: 'assets',
+        },
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader',
+      },
     ],
   },
   plugins: [

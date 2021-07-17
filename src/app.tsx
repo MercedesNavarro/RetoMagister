@@ -1,5 +1,10 @@
 import React from 'react';
+import { StartScene, FormScene } from './scenes';
 
 export const App: React.FC = () => {
-  return <h1>Hello from React APP!!</h1>;
+  return (
+    <>
+      <FormScene></FormScene>
+    </>
+  );
 };
